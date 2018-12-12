@@ -2013,7 +2013,7 @@ def interactive_server(port=27017, verbose=True, all_ok=False, name='MockupDB',
                       verbose=verbose,
                       request_timeout=int(1e6),
                       ssl=ssl,
-                      auto_ismaster=True,
+                      auto_ismaster=False,
                       uds_path=uds_path)
     if all_ok:
         server.autoresponds({})
