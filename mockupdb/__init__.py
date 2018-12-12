@@ -1231,7 +1231,7 @@ class MockupDB(object):
         if uds_path:
             self._address = (uds_path, 0)
         else:
-            self._address = ('localhost', port)
+            self._address = ('0.0.0.0', port)
 
         self._verbose = verbose
         self._label = None
